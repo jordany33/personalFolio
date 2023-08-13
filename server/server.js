@@ -31,9 +31,9 @@ router.get('/', (req, res, next) => {
     res.sendFile('landing.html', { root: '../views' });
 });
 
-router.get( '/content', ( req, res ) =>
+router.get( '/learn-more', ( req, res ) =>
 {
-    res.sendFile( 'content.html', { root: '../views' } );
+    res.sendFile( 'learn-more.html', { root: '../views' } );
 });
 
 // possible alternate dir
