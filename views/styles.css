@@ -123,17 +123,17 @@ header {
     color: #64ffda !important;
 }
 
-.nav-item a[href="/content"]:hover,
+.nav-item a[href="/learn-more"]:hover,
 .nav-item a[href="#experience"]:hover,
 .nav-item a[href="#projects"]:hover,
 .nav-item a[href="#contact"]:hover {
     color: #64ffda !important;
 }
 
-.nav-item a[href="/content"]:hover,
-.nav-item a[href="/content/#experience"]:hover,
-.nav-item a[href="/content/#projects"]:hover,
-.nav-item a[href="/content/#contact"]:hover {
+.nav-item a[href="/learn-more"]:hover,
+.nav-item a[href="/learn-more/#experience"]:hover,
+.nav-item a[href="/learn-more/#projects"]:hover,
+.nav-item a[href="/learn-more/#contact"]:hover {
     color: #64ffda !important;
 }
 
