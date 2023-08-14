@@ -2,15 +2,15 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server/server.js",
+  "main": "api/server.js",
   "type": "module",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server/server.js",
-    "start": "node server/server.js"
+    "dev": "nodemon api/server.js",
+    "start": "node api/server.js"
   },
   "keywords": [],
   "author": "",
