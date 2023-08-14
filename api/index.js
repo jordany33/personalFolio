@@ -23,19 +23,22 @@ app.use(session({ secret: 'xQN7Ep8NjsZjzy', resave: true, saveUninitialized: tru
 app.use('/', router); /* this is what allows us to specify routes */
 
 // setup all static files (css, html, scripts)
-app.use('/', express.static('public'));
+app.use('/', express.static('../public')); 
+app.use('/fonts', express.static('../fonts'));
+app.use('/imgs', express.static('../imgs'));
+app.use('/scripts', express.static('../scripts'));
 
 // get root dir (https://jordany.dev/) & send to index.html
 router.get('/', (req, res, next) => {
-    res.sendFile('landing.html', { root: 'public' });
+    res.sendFile('landing.html', { root: '../public' });
 });
 
 router.get('/learn-more', (req, res) => {
-    res.sendFile('learn-more.html', { root: 'public' });
+    res.sendFile('learn-more.html', { root: '../public' });
 });
 
 router.get('/projects', (req, res) => {
-    res.sendFile('projects.html', { root: 'public' });
+    res.sendFile('projects.html', { root: '../public' });
 });
 
 router.get('/logger', (req, res, next) => {

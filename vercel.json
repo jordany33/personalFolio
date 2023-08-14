@@ -1,9 +1,15 @@
 {
     "version": 2,
-    "rewrites": [
-        { "source": "/fonts/:path*", "destination": "/fonts/:path*" },
-        { "source": "/imgs/:path*", "destination": "/imgs/:path*" },
-        { "source": "/scripts/:path*", "destination": "/scripts/:path*" },
-        { "source": "/public/:path*", "destination": "/public/:path*" }
+    "builds": [
+     {
+         "src": "./index.js",
+         "use": "@vercel/node"
+     }
+    ],
+    "routes": [
+     {
+         "src": "/(.*)",
+         "dest": "/"
+     }
     ]
-}
+ }
