@@ -1,13 +1,9 @@
 {
     "version": 2,
-    "builds": [
-      { "src": "server/server.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-      { "src": "/fonts/.*", "dest": "/fonts" },
-      { "src": "/imgs/.*", "dest": "/imgs" },
-      { "src": "/scripts/.*", "dest": "/scripts" },
-      { "src": "/views/.*", "dest": "/views" }
+    "rewrites": [
+        { "source": "/fonts/:path*", "destination": "/fonts/:path*" },
+        { "source": "/imgs/:path*", "destination": "/imgs/:path*" },
+        { "source": "/scripts/:path*", "destination": "/scripts/:path*" },
+        { "source": "/views/:path*", "destination": "/views/:path*" }
     ]
-  }
-  
+}
