@@ -4,6 +4,6 @@
         { "source": "/fonts/:path*", "destination": "/fonts/:path*" },
         { "source": "/imgs/:path*", "destination": "/imgs/:path*" },
         { "source": "/scripts/:path*", "destination": "/scripts/:path*" },
-        { "source": "/views/:path*", "destination": "/views/:path*" }
+        { "source": "/public/:path*", "destination": "/public/:path*" }
     ]
 }
