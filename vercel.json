@@ -1,52 +1,13 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "/server/*.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "/views/*.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "/views/*.css",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "/imgs/*",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "/fonts/*",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "/scripts/*.js",
-        "use": "@vercel/static"
-      }
+      { "src": "server/server.js", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        "src": "/fonts/(.*)",
-        "dest": "/fonts/$1"
-      },
-      {
-        "src": "/imgs/(.*)",
-        "dest": "/imgs/$1"
-      },
-      {
-        "src": "/scripts/(.*)",
-        "dest": "/scripts/$1"
-      },
-      {
-        "src": "/views/(.*)",
-        "dest": "/views/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/server/$1.js"
-      }
+      { "src": "/fonts/.*", "dest": "/fonts" },
+      { "src": "/imgs/.*", "dest": "/imgs" },
+      { "src": "/scripts/.*", "dest": "/scripts" },
+      { "src": "/views/.*", "dest": "/views" }
     ]
   }
   

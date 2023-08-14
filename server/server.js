@@ -66,3 +66,5 @@ console.log('server running on ' + port);
 
 // repo data
 const axios = require('axios');
+
+module.exports = app;
