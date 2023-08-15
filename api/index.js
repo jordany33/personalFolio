@@ -24,15 +24,15 @@ app.use('/scripts', express.static('scripts'));
 
 // Routes
 router.get('/', (req, res) => {
-    res.sendFile('landing.html', { root: 'public' });
+    res.sendFile('landing.html', { root: '../public' });
 });
 
 router.get('/learn-more', (req, res) => {
-    res.sendFile('learn-more.html', { root: 'public' });
+    res.sendFile('learn-more.html', { root: '../public' });
 });
 
 router.get('/projects', (req, res) => {
-    res.sendFile('projects.html', { root: 'public' });
+    res.sendFile('projects.html', { root: '../public' });
 });
 
 app.listen(port);
