@@ -1,7 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import morgan from 'morgan';
-import path from 'path';
+import axios from 'axios';
 
 const app = express();
 const router = express.Router();
@@ -11,33 +11,36 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev')); // request logger
 
-app.use(session({ 
-    secret: 'xQN7Ep8NjsZjzy', 
-    resave: true, 
-    saveUninitialized: true, 
-    cookie: { maxAge: 100000, secure: false } 
-}));
+/* NOTE: 
+The order of the 2 functions below is critical for the app to work
+properly. The session middleware won't be called for any 
+requests that get handled by the router if the router is 
+initialized before the session data is set.
+( if !session, the router will continue as normal )
+*/
 
-// Serve all static files from the 'public' directory
-app.use('/', express.static(path.resolve(__dirname, '../public')));
+app.use(session({ secret: 'xQN7Ep8NjsZjzy', resave: true, saveUninitialized: true, cookie: { maxAge: 100000, secure: false } }));
+app.use('/', router); /* this is what allows us to specify routes */
 
-// Use the router
-app.use('/', router);
+// setup all static files (css, html, scripts)
+app.use('/', express.static('../public')); 
+app.use('/fonts', express.static('../fonts'));
+app.use('/imgs', express.static('../imgs'));
+app.use('/scripts', express.static('../scripts'));
 
-// Routes
-router.get('/', (req, res) => {
-    res.sendFile('landing.html', { root: path.resolve(__dirname, '../public') });
+// get root dir (https://jordany.dev/) & send to index.html
+router.get('/', (req, res, next) => {
+    res.sendFile('landing.html', { root: '../public' });
 });
 
 router.get('/learn-more', (req, res) => {
-    res.sendFile('learn-more.html', { root: path.resolve(__dirname, '../public') });
+    res.sendFile('learn-more.html', { root: '../public' });
 });
 
 router.get('/projects', (req, res) => {
-    res.sendFile('projects.html', { root: path.resolve(__dirname, '../public') });
+    res.sendFile('projects.html', { root: '../public' });
 });
 
-// Logger route (you can remove this if not needed)
 router.get('/logger', (req, res, next) => {
     if (req.session.views) {
         let ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
