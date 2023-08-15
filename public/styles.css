@@ -834,6 +834,7 @@ footer a:hover {
 .timeline-content ul li {
     font-size: 15px;
     color: #8892b0;
+    margin-bottom: 10px; /* Add or adjust this line */
 }
 
 .timeline-content .experience-description {
@@ -843,7 +844,7 @@ footer a:hover {
 }
 
 .container-experience {
-    width: 80%;
+    width: 100%;
     padding: 50px 0;
     margin: 50px auto;
     position: relative;
@@ -851,9 +852,9 @@ footer a:hover {
 }
 
 .timeline-block {
-    width: -webkit-calc(50% + 8px);
-    width: -moz-calc(50% + 8px);
-    width: calc(50% + 8px);
+    width: -webkit-calc(65% + 8px);
+    width: -moz-calc(65% + 8px);
+    width: calc(65% + 8px);
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -867,15 +868,17 @@ footer a:hover {
 
 .timeline-block-right {
     float: right;
+    margin-right: -1%;  /* push more to the right */
 }
 
 .timeline-block-left {
     float: left;
+    margin-left: -13%;  /* push more to the left */
 }
 
 .timeline-content {
-    width: 95%;
-    padding: 0 15px;
+    width: 75%;
+    padding: 0 10px;
     color: #ccd6f6;
 }
 

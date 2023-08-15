@@ -26,7 +26,8 @@ app.use('/', router); /* this is what allows us to specify routes */
 app.use('/', express.static('../public')); 
 app.use('/fonts', express.static('../fonts'));
 app.use('/imgs', express.static('../imgs'));
-app.use('/scripts', express.static('../scripts'));
+app.use('/favicons', express.static('../favicons'));
+app.use('/templates', express.static('../templates'));
 
 // get root dir (https://jordany.dev/) & send to index.html
 router.get('/', (req, res, next) => {
@@ -35,10 +36,6 @@ router.get('/', (req, res, next) => {
 
 router.get('/learn-more', (req, res) => {
     res.sendFile('learn-more.html', { root: '../public' });
-});
-
-router.get('/projects', (req, res) => {
-    res.sendFile('projects.html', { root: '../public' });
 });
 
 router.get('/logger', (req, res, next) => {
