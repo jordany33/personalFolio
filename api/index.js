@@ -28,6 +28,7 @@ app.use('/fonts', express.static('../fonts'));
 app.use('/imgs', express.static('../imgs'));
 app.use('/favicons', express.static('../favicons'));
 app.use('/templates', express.static('../templates'));
+app.use('/content', express.static('../content'));
 
 // get root dir (https://jordany.dev/) & send to index.html
 router.get('/', (req, res, next) => {
