@@ -112,17 +112,17 @@
                         <h1 class="skills-h1">Skills</h1>
                     </div>
                     <div class="skills-content">
-                        <div class="skillbar" data-percent="55%">
+                        <div class="skillbar" data-percent="100%">
                             <div class="skillbar-title">Java</div>
                             <div class="skill-bar-percent">100%</div>
                             <div class="skillbar-bar" style="width: 100%"></div>
                         </div>
-                        <div class="skillbar" data-percent="80%">
+                        <div class="skillbar" data-percent="90%">
                             <div class="skillbar-title">Python</div>
                             <div class="skill-bar-percent">90%</div>
                             <div class="skillbar-bar" style="width: 90%"></div>
                         </div>
-                        <div class="skillbar" data-percent="40%">
+                        <div class="skillbar" data-percent="100%">
                             <div class="skillbar-title">C++</div>
                             <div class="skill-bar-percent">100%</div>
                             <div class="skillbar-bar" style="width: 100%"></div>
@@ -132,16 +132,47 @@
                             <div class="skill-bar-percent">70%</div>
                             <div class="skillbar-bar" style="width: 70%"></div>
                         </div>
+                        <div class="button-container show-more-container">
+                            <button type="button" class="skills-button" id="showMoreSkills">Show More</button>                 
+                        </div>                       
+                        <div class="skillbar hidden" data-percent="95%">
+                            <div class="skillbar-title">JavaScript</div>
+                            <div class="skill-bar-percent">95%</div>
+                            <div class="skillbar-bar" style="width: 95%"></div>
+                        </div>
+                        <div class="skillbar hidden" data-percent="85%">
+                            <div class="skillbar-title">Node.js</div>
+                            <div class="skill-bar-percent">85%</div>
+                            <div class="skillbar-bar" style="width: 85%"></div>
+                        </div>
+                        <div class="skillbar hidden" data-percent="100%">
+                            <div class="skillbar-title">HTML</div>
+                            <div class="skill-bar-percent">100%</div>
+                            <div class="skillbar-bar" style="width: 100%"></div>
+                        </div>
+                        <div class="skillbar hidden" data-percent="95%">
+                            <div class="skillbar-title">CSS</div>
+                            <div class="skill-bar-percent">95%</div>
+                            <div class="skillbar-bar" style="width: 95%"></div>
+                        </div>
+                        <div class="skillbar hidden" data-percent="65%">
+                            <div class="skillbar-title">React</div>
+                            <div class="skill-bar-percent">65%</div>
+                            <div class="skillbar-bar" style="width: 65%"></div>
+                        </div>
+                        <div class="skillbar hidden" data-percent="60%">
+                            <div class="skillbar-title">R</div>
+                            <div class="skill-bar-percent">60%</div>
+                            <div class="skillbar-bar" style="width: 60%"></div>
+                        </div>
+                        <div class="button-container show-less-container hidden btn-fade">
+                            <button type="button" class="skills-button" id="showLessSkills">Show Less</button>
+                        </div>                                    
                     </div>                
                 </div>
             </section>
 
-            <section id="experience">
-                <div class="button-container">
-                    <a href="content/resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <button type="button" class="skills-button">View More</button>
-                    </a>                    
-                </div>    
+            <section id="experience">                            
                 <h1 class="title-container">Experience</h1>
                 <div class="container-experience">
                     <div class="timeline-block timeline-block-right">
@@ -199,6 +230,21 @@
                         <div class="timeline-content">
                             <h1 class="company">Officer <a href="https://codedevils.org/" target="_blank" rel="noopener noreferrer"><span>@ CodeDevils</span></a></h1>
                             <span class="experience-description">January 2022 - May 2023</span>
+                            <ul>
+                                <li>Oversaw functions of CodeDevils, ASU's largest online organization boasting over 2,000 members.</li>
+                                <li>Directed initiatives such as career development, collaboration with industry 
+                                    professionals, coding challenges, hackathons, meetings, financials, and project management.</li>
+                                <li>Collaborated with industry partners and students to develop standout projects like Devil Bot 
+                                    (using Rust & AWS) and the React Component Library.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block timeline-block-right">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h1 class="company">Technical and Logistical Organizer <a href="https://sunhacks.io/" target="_blank" rel="noopener noreferrer"><span>@ sunhacks</span></a></h1>
+                            <span class="experience-description">October 2022 - Februrary 2023</span>
                             <ul>
                                 <li>Oversaw functions of CodeDevils, ASU's largest online organization boasting over 2,000 members.</li>
                                 <li>Directed initiatives such as career development, collaboration with industry 
@@ -352,6 +398,7 @@
 
     <!-- JavaScript link -->
     <script src="/templates/landing.js"></script>
+    <script src="/templates/learn-more.js"></script>
     <script src="/templates/href.js"></script>    
     <!-- Add Bootstrap JS link -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -89,7 +89,7 @@ header {
 }
 
 #experience {
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 #projects {
@@ -1148,7 +1148,18 @@ button:focus {
     display: block;
     width: 100%;
     margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease, max-height 1s ease; 
+    transition-delay: 0s, 0s, 0s, 0s;
+    opacity: 1;
+    max-height: 100px;        
+    overflow: visible;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.delayed-hidden-visibility {
+    visibility: hidden;
+    transition-delay: 1s; 
 }
 
 .skillbar:hover {
@@ -1204,13 +1215,40 @@ button:focus {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.hidden {
+    opacity: 0; 
+    max-height: 0; 
+    overflow: hidden;          
+    transition: opacity 1s ease, max-height 1s ease;
+    transition-delay: 0s, 0s; 
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.btn-fade {
+    opacity: 0;
+    transition: opacity 1s ease; 
+}
+
+.btn-more-fade {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.opaque {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
 .button-container {
     text-align: center;
 }
 
+.show-more-container {
+    transition: opacity 1s ease;
+}
+
 .skills-button {
-    margin-top: -130px;
-    margin-bottom: 200px;
     font-family: 'DM Sans', sans-serif;
     color: #64ffda;
     border: 2px solid #64ffda;
@@ -1218,6 +1256,7 @@ button:focus {
     transition: transform 0.5s, box-shadow 0.5s;
     font-size: 16px;
     padding: 10px 20px;
+    margin-top: 40px;
 }
 
 .skills-button:hover {
