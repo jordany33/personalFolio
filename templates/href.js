@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Selecting links which have the data-section attribute
     var links = document.querySelectorAll('a[data-section]');
 
     for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function(event) {
+        links[i].addEventListener('click', function (event) {
             // Extract the section ID from data-section attribute
             var sectionID = this.getAttribute('data-section');
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 event.preventDefault(); // Prevent default behavior (navigating to the URL)
 
                 var section = document.getElementById(sectionID);
-                
+
                 if (section) {
                     // Scroll smoothly to the section
                     section.scrollIntoView({

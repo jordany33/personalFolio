@@ -23,7 +23,7 @@ app.use(session({ secret: 'xQN7Ep8NjsZjzy', resave: true, saveUninitialized: tru
 app.use('/', router); /* this is what allows us to specify routes */
 
 // setup all static files (css, html, scripts)
-app.use('/', express.static('../public')); 
+app.use('/', express.static('../public'));
 app.use('/fonts', express.static('../fonts'));
 app.use('/imgs', express.static('../imgs'));
 app.use('/favicons', express.static('../favicons'));
