@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Yee</title>
@@ -12,7 +11,6 @@
     <link rel="preload" as="image" href="/favicons/apple-touch-icon.png">
     <link rel="preload" as="image" href="/favicons/android-chrome-192x192.png">
     <link rel="preload" as="image" href="/favicons/android-chrome-512x512.png">
-
     <!-- Regular favicon links -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -25,402 +23,277 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body class="content-page">
-
+  </head>
+  <body class="content-page">
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <a href="/">
-                    <img src="/imgs/bitmoji.png" class="circle-effect" alt="Description">
-                </a>
-                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60"
-                    onclick="this.classList.toggle('active')" data-toggle="collapse" data-target="#navbarNav">
-                    <path class="line top"
-                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                    <path class="line middle" d="m 30,50 h 40" />
-                    <path class="line bottom"
-                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-                </svg>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="content/resume.pdf" target="_blank" class="btn resume-button">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="/">
+            <img src="/imgs/bitmoji.png" class="circle-effect" alt="Description">
+          </a>
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')" data-toggle="collapse" data-target="#navbarNav">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="content/resume.pdf" target="_blank" class="btn resume-button">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <div class="container">
-        <main>
-            <section id="about">
-                <div class="about-header">
-                    <h1>About Me</h1>
-                </div>
-                <p class="about-me-content">Hello! My name is <a href="https://yeejordan.com" target="_blank"
-                        class="green-highlight">Jordan</a>, and I'm deeply passionate about everything tech. My software
-                    journey kicked
-                    off in high school, where I founded a tech club and developed my first program using JavaScript.
-                    This early
-                    experience paved the way for me to explore the freelancing industry and eventually establish a
-                    successful small
-                    business.</p>
-
-                <p class="about-me-content">Fast-forward to the present, I've had the privilege of working at a <a
-                        href="https://www.iridium.com" target="_blank" class="green-highlight">satellite communications
-                        company</a> and
-                    a <a href="https://www.darpa.mil/program/artificial-social-intelligence-for-successful-teams"
-                        target="_blank" class="green-highlight">research lab focused on machine learning</a>. These
-                    days, I'm channeling my efforts into
-                    crafting accessible, inclusive tech solutions at Iridium. With a keen interest in the evolving
-                    landscape of AI and machine learning,
-                    I'm constantly learning and adapting to new technologies.</p>
-
-                <p class="about-me-content">As I continue to expand my horizons, I'm actively seeking internship
-                    opportunities for the
-                    summer of 2024. If you're interested or simply wish to explore more about my journey, feel free to
-                    check out the
-                    links below:</p>
-                
-                <div class="social-overlap process-scetion mt100">
-                    <div class="row justify-content-center">
-                        <div class="col-md-12">
-                            <div class="social-bar">
-                                <div class="social-icons mb-5 iconpad text-center">
-                                    <a href="mailto:jrdeyee@gmail.com" target="_blank"
-                                        class="slider-nav-item gmail-icon">
-                                        <img src="/imgs/gmail_icon.svg" alt="Gmail" class="icon-size">
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/jordandyee/" target="_blank"
-                                        class="slider-nav-item"><i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/jordany33" target="_blank"
-                                        class="slider-nav-item"><i class="fab fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-section">
-                    <div class="skills-header">
-                        <h1 class="skills-h1">Skills</h1>
-                    </div>
-                    <div class="skills-content">
-                        <div class="skillbar" data-percent="100%">
-                            <div class="skillbar-title">Java</div>
-                            <div class="skill-bar-percent">100%</div>
-                            <div class="skillbar-bar" style="width: 100%"></div>
-                        </div>
-                        <div class="skillbar" data-percent="90%">
-                            <div class="skillbar-title">Python</div>
-                            <div class="skill-bar-percent">90%</div>
-                            <div class="skillbar-bar" style="width: 90%"></div>
-                        </div>
-                        <div class="skillbar" data-percent="100%">
-                            <div class="skillbar-title">C++</div>
-                            <div class="skill-bar-percent">100%</div>
-                            <div class="skillbar-bar" style="width: 100%"></div>
-                        </div>
-                        <div class="skillbar" data-percent="70%">
-                            <div class="skillbar-title">Go</div>
-                            <div class="skill-bar-percent">70%</div>
-                            <div class="skillbar-bar" style="width: 70%"></div>
-                        </div>
-                        <div class="button-container show-more-container">
-                            <button type="button" class="skills-button" id="showMoreSkills">Show More</button>
-                        </div>
-                        <div class="skillbar hidden" data-percent="95%">
-                            <div class="skillbar-title">JavaScript</div>
-                            <div class="skill-bar-percent">95%</div>
-                            <div class="skillbar-bar" style="width: 95%"></div>
-                        </div>
-                        <div class="skillbar hidden" data-percent="85%">
-                            <div class="skillbar-title">Node.js</div>
-                            <div class="skill-bar-percent">85%</div>
-                            <div class="skillbar-bar" style="width: 85%"></div>
-                        </div>
-                        <div class="skillbar hidden" data-percent="100%">
-                            <div class="skillbar-title">HTML</div>
-                            <div class="skill-bar-percent">100%</div>
-                            <div class="skillbar-bar" style="width: 100%"></div>
-                        </div>
-                        <div class="skillbar hidden" data-percent="95%">
-                            <div class="skillbar-title">CSS</div>
-                            <div class="skill-bar-percent">95%</div>
-                            <div class="skillbar-bar" style="width: 95%"></div>
-                        </div>
-                        <div class="skillbar hidden" data-percent="65%">
-                            <div class="skillbar-title">React</div>
-                            <div class="skill-bar-percent">65%</div>
-                            <div class="skillbar-bar" style="width: 65%"></div>
-                        </div>
-                        <div class="skillbar hidden" data-percent="60%">
-                            <div class="skillbar-title">R</div>
-                            <div class="skill-bar-percent">60%</div>
-                            <div class="skillbar-bar" style="width: 60%"></div>
-                        </div>
-                        <div class="button-container show-less-container hidden btn-fade">
-                            <button type="button" class="skills-button" id="showLessSkills">Show Less</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="experience">
-                <h1 class="title-container">Experience</h1>
-                <div class="container-experience">
-                    <div class="timeline-block timeline-block-right">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h1 class="company">Software Engineer Intern <a href="https://www.iridium.com/"
-                                    target="_blank" rel="noopener noreferrer"><span>@ Iridium</span></a></h1>
-                            <span class="experience-description">May 2023 - August</span>
-                            <ul>
-                                <li>Worked on the Space Development Agency team.</li>
-                                <li>Led development of a Python automation script integrating JIRA data into a
-                                    government-compliant Earned Value Management system, minimizing manual interventions
-                                    and
-                                    boosting data accuracy.</li>
-                                <li>Utilized R4J REST API with Python to extract requirements tree and verification
-                                    matrix from JIRA API, enhancing data accessibility and management.</li>
-                                <li>Implemented Docker integration with Splunk as a Log Driver to proactively
-                                    monitor and analyze computer health performance, leading to a reduction in
-                                    troubleshooting time and improved system reliability.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block timeline-block-left">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h1 class="company">Research Intern <a
-                                    href="https://www.darpa.mil/program/artificial-social-intelligence-for-successful-teams"
-                                    target="_blank"
-                                    rel="noopener noreferrer"><span>@ Arizona State University</span></a></h1>
-                            <span class="experience-description">July 2022 - December 2022</span>
-                            <ul>
-                                <li>Researched and implemented innovative approaches to cleanse data from
-                                    studies carried out under DARPA's Artificial Social Intelligence for
-                                    Successful Teams (ASIST) initiative.</li>
-                                <li>Executed data processing for weekly studies conducted in specialized testbeds,
-                                    aimed at collecting performance data in a search and rescue (SAR) task.</li>
-                                <li>Deployed Python and R scripts to effectively clean metadata files and convert data
-                                    into CSV format.</li>
-                                <li>Effectively communicated biweekly progress updates on thesis implementation
-                                    involving vision models to advisor.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block timeline-block-right">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h1 class="company">Founder <span>@ Trilogy</span></a></h1>
-                            <span class="experience-description">May 2019 - August 2021</span>
-                            <ul>
-                                <li>Launched and operated a graphics/video editing business operating under Fiverr's
-                                    freelancing services.</li>
-                                <li>Led end-to-end development of a feature-rich web application for shopping, utilizing
-                                    HTML, CSS, JavaScript, and Bootstrap.</li>
-                                <li>Conducted comprehensive analysis of user needs and market trends, incorporating
-                                    insights from over 100+ customer reviews.</li>
-                                <li>Successfully scaled the business to serve 500+ clients on a national and
-                                    international level.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block timeline-block-left">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h1 class="company">Officer <a href="https://codedevils.org/" target="_blank"
-                                    rel="noopener noreferrer"><span>@ CodeDevils</span></a></h1>
-                            <span class="experience-description">January 2022 - May 2023</span>
-                            <ul>
-                                <li>Oversaw functions of CodeDevils, ASU's largest online organization boasting over
-                                    2,000 members.</li>
-                                <li>Directed initiatives such as career development, collaboration with industry
-                                    professionals, coding challenges, hackathons, meetings, financials, and project
-                                    management.</li>
-                                <li>Collaborated with industry partners and students to develop standout projects like
-                                    Devil Bot
-                                    (using Rust & AWS) and the React Component Library.</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block timeline-block-right">
-                        <div class="marker"></div>
-                        <div class="timeline-content">
-                            <h1 class="company">Technical and Logistical Organizer <a href="https://sunhacks.io/"
-                                    target="_blank" rel="noopener noreferrer"><span>@ sunhacks</span></a></h1>
-                            <span class="experience-description">October 2022 - Februrary 2023</span>
-                            <ul>
-                                <li>Played a pivotal role in sunhacks, a premier yearly hackathon dedicated to nurturing student innovation and
-                                    fostering a community of learners, by providing essential resources for growth and development.</li>
-                                <li>Assisted in the organization, planning, and execution of the event.</li>
-                                <li>Supported a diverse community of students through workshops, mentorship, and networking.</li>
-                                <li>Collaborated on the planning of prizes and financial logistics.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects">
-                <h1 class="project-title">Projects</h1>
-                <div class="card-deck">
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <a href="https://github.com" target="_blank" class="card-link">
-                        <div class="card">
-                            <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                            <div class="card-body">
-                                <h1 class="card-title">Type Writer</h1>
-                                <p class="card-text">This project contains a type writer made utilizing windows
-                                    functions to enhance the look of console text displayed to the user.</p>
-                                <p class="languages">C++ Next.js CSS Firebase</p>
-                            </div>
-                        </div>
+      <main>
+        <section id="about">
+          <div class="about-header">
+            <h1>About Me</h1>
+          </div>
+          <p class="about-me-content">Hello! My name is <a href="https://yeejordan.com" target="_blank" class="green-highlight">Jordan</a>, and I'm deeply passionate about everything tech. My software journey kicked off in high school, where I founded a tech club and developed my first program using JavaScript. This early experience paved the way for me to explore the freelancing industry and eventually establish a successful small business. </p>
+          <p class="about-me-content">Fast-forward to the present, I've had the privilege of working at a <a href="https://www.iridium.com" target="_blank" class="green-highlight">satellite communications company</a> and a <a href="https://www.darpa.mil/program/artificial-social-intelligence-for-successful-teams" target="_blank" class="green-highlight">research lab focused on machine learning</a>. These days, I'm channeling my efforts into crafting accessible, inclusive tech solutions at Iridium. With a keen interest in the evolving landscape of AI and machine learning, I'm constantly learning and adapting to new technologies. </p>
+          <p class="about-me-content">As I continue to expand my horizons, I'm actively seeking internship opportunities for the summer of 2024. If you're interested or simply wish to explore more about my journey, feel free to check out the links below:</p>
+          <div class="social-overlap process-scetion mt100">
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="social-bar">
+                  <div class="social-icons mb-5 iconpad text-center">
+                    <a href="mailto:jrdeyee@gmail.com" target="_blank" class="slider-nav-item gmail-icon">
+                      <img src="/imgs/gmail_icon.svg" alt="Gmail" class="icon-size">
                     </a>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com" target="_blank" class="card-link">
-                            <div class="card">
-                                <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
-                                <div class="card-body">
-                                    <h1 class="card-title">Type Writer</h1>
-                                    <p class="card-text">This project contains a type writer made utilizing windows
-                                        functions to enhance the look of console text displayed to the user.</p>
-                                    <p class="languages">C++ Next.js CSS Firebase</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/jordandyee/" target="_blank" class="slider-nav-item">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/jordany33" target="_blank" class="slider-nav-item">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
                 </div>
-            </section>
-
-            <section id="contact">
-                <h6 class="contact-sub">What's Next?</h6>
-                <h1 class="contact-title">Get In Touch</h1>
-                <p>I'm exploring internship opportunities for summer 2024. Whether you have a
-                    role in mind or just want to say hi, please reach out. I value every connection and
-                    will respond promptly!</p>
-                <a href="mailto:jrdeyee@gmail.com">
-                    <button type="button" class="contact-button">Say Hello</button>
-                </a>
-            </section>
-        </main>
+              </div>
+            </div>
+          </div>
+          <div class="skills-section">
+            <div class="skills-header">
+              <h1 class="skills-h1">Skills</h1>
+            </div>
+            <div class="skills-content">
+              <div class="skillbar" data-percent="100%">
+                <div class="skillbar-title">Java</div>
+                <div class="skill-bar-percent">100%</div>
+                <div class="skillbar-bar" style="width: 100%"></div>
+              </div>
+              <div class="skillbar" data-percent="90%">
+                <div class="skillbar-title">Python</div>
+                <div class="skill-bar-percent">90%</div>
+                <div class="skillbar-bar" style="width: 90%"></div>
+              </div>
+              <div class="skillbar" data-percent="100%">
+                <div class="skillbar-title">C++</div>
+                <div class="skill-bar-percent">100%</div>
+                <div class="skillbar-bar" style="width: 100%"></div>
+              </div>
+              <div class="skillbar" data-percent="70%">
+                <div class="skillbar-title">Go</div>
+                <div class="skill-bar-percent">70%</div>
+                <div class="skillbar-bar" style="width: 70%"></div>
+              </div>
+              <div class="button-container show-more-container">
+                <button type="button" class="skills-button" id="showMoreSkills">Show More</button>
+              </div>
+              <div class="skillbar hidden" data-percent="95%">
+                <div class="skillbar-title">JavaScript</div>
+                <div class="skill-bar-percent">95%</div>
+                <div class="skillbar-bar" style="width: 95%"></div>
+              </div>
+              <div class="skillbar hidden" data-percent="85%">
+                <div class="skillbar-title">Node.js</div>
+                <div class="skill-bar-percent">85%</div>
+                <div class="skillbar-bar" style="width: 85%"></div>
+              </div>
+              <div class="skillbar hidden" data-percent="100%">
+                <div class="skillbar-title">HTML</div>
+                <div class="skill-bar-percent">100%</div>
+                <div class="skillbar-bar" style="width: 100%"></div>
+              </div>
+              <div class="skillbar hidden" data-percent="95%">
+                <div class="skillbar-title">CSS</div>
+                <div class="skill-bar-percent">95%</div>
+                <div class="skillbar-bar" style="width: 95%"></div>
+              </div>
+              <div class="skillbar hidden" data-percent="65%">
+                <div class="skillbar-title">React</div>
+                <div class="skill-bar-percent">65%</div>
+                <div class="skillbar-bar" style="width: 65%"></div>
+              </div>
+              <div class="skillbar hidden" data-percent="60%">
+                <div class="skillbar-title">R</div>
+                <div class="skill-bar-percent">60%</div>
+                <div class="skillbar-bar" style="width: 60%"></div>
+              </div>
+              <div class="button-container show-less-container hidden btn-fade">
+                <button type="button" class="skills-button" id="showLessSkills">Show Less</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="experience">
+          <h1 class="title-container">Experience</h1>
+          <div class="container-experience">
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h1 class="company">Software Engineer Intern <a href="https://www.iridium.com/" target="_blank" rel="noopener noreferrer">
+                    <span>@ Iridium</span>
+                  </a>
+                </h1>
+                <span class="experience-description">May 2023 - August</span>
+                <ul>
+                  <li>Worked on the Space Development Agency team.</li>
+                  <li>Led development of a Python automation script integrating JIRA data into a government-compliant Earned Value Management system, minimizing manual interventions and boosting data accuracy.</li>
+                  <li>Utilized R4J REST API with Python to extract requirements tree and verification matrix from JIRA API, enhancing data accessibility and management.</li>
+                  <li>Implemented Docker integration with Splunk as a Log Driver to proactively monitor and analyze computer health performance, leading to a reduction in troubleshooting time and improved system reliability.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-block timeline-block-left">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h1 class="company">Research Intern <a href="https://www.darpa.mil/program/artificial-social-intelligence-for-successful-teams" target="_blank" rel="noopener noreferrer">
+                    <span>@ Arizona State University</span>
+                  </a>
+                </h1>
+                <span class="experience-description">July 2022 - December 2022</span>
+                <ul>
+                  <li>Researched and implemented innovative approaches to cleanse data from studies carried out under DARPA's Artificial Social Intelligence for Successful Teams (ASIST) initiative.</li>
+                  <li>Executed data processing for weekly studies conducted in specialized testbeds, aimed at collecting performance data in a search and rescue (SAR) task.</li>
+                  <li>Deployed Python and R scripts to effectively clean metadata files and convert data into CSV format.</li>
+                  <li>Effectively communicated biweekly progress updates on thesis implementation involving vision models to advisor.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h1 class="company">Founder <span>@ Trilogy</span>
+                  </a>
+                </h1>
+                <span class="experience-description">May 2019 - August 2021</span>
+                <ul>
+                  <li>Launched and operated a graphics/video editing business operating under Fiverr's freelancing services.</li>
+                  <li>Led end-to-end development of a feature-rich web application for shopping, utilizing HTML, CSS, JavaScript, and Bootstrap.</li>
+                  <li>Conducted comprehensive analysis of user needs and market trends, incorporating insights from over 100+ customer reviews.</li>
+                  <li>Successfully scaled the business to serve 500+ clients on a national and international level.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-block timeline-block-left">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h1 class="company">Officer <a href="https://codedevils.org/" target="_blank" rel="noopener noreferrer">
+                    <span>@ CodeDevils</span>
+                  </a>
+                </h1>
+                <span class="experience-description">January 2022 - May 2023</span>
+                <ul>
+                  <li>Oversaw functions of CodeDevils, ASU's largest online organization boasting over 2,000 members.</li>
+                  <li>Directed initiatives such as career development, collaboration with industry professionals, coding challenges, hackathons, meetings, financials, and project management.</li>
+                  <li>Collaborated with industry partners and students to develop standout projects like Devil Bot (using Rust & AWS) and the React Component Library.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-block timeline-block-right">
+              <div class="marker"></div>
+              <div class="timeline-content">
+                <h1 class="company">Technical and Logistical Organizer <a href="https://sunhacks.io/" target="_blank" rel="noopener noreferrer">
+                    <span>@ sunhacks</span>
+                  </a>
+                </h1>
+                <span class="experience-description">October 2022 - Februrary 2023</span>
+                <ul>
+                  <li>Played a pivotal role in sunhacks, a premier yearly hackathon dedicated to nurturing student innovation and fostering a community of learners, by providing essential resources for growth and development.</li>
+                  <li>Assisted in the organization, planning, and execution of the event.</li>
+                  <li>Supported a diverse community of students through workshops, mentorship, and networking.</li>
+                  <li>Collaborated on the planning of prizes and financial logistics.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <h1 class="project-title">Projects</h1>
+          <div class="card-deck">
+            <div>
+              <a href="https://github.com/jordany33/labyrinthine-bfs-explorer" target="_blank" class="card-link">
+                <div class="card">
+                  <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
+                  <div class="card-body">
+                    <h1 class="card-title">LabyrinthineBFSExplorer</h1>
+                    <p class="card-text">A refined C++ pathfinding algorithm, grounded in a grid layout, employs the Breadth First Search approach. It adeptly navigates intricate mazes and obstructions, pinpointing the optimal path from beginning to end. </p>
+                    <p class="languages">C++ C</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/jordany33/Advanced-YOLOv8-Video-Detection" target="_blank" class="card-link">
+                <div class="card">
+                  <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
+                  <div class="card-body">
+                    <h1 class="card-title">Object Detection using YOLO</h1>
+                    <p class="card-text">An advanced YOLOv8-based object detection system. It seamlessly scans and visualizes objects within video files, while also logging results for further analysis.</p>
+                    <p class="languages">Python</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/jordany33/banking-system" target="_blank" class="card-link">
+                <div class="card">
+                  <i class="fa-regular fa-folder" style="color: #64ffda;"></i>
+                  <div class="card-body">
+                    <h1 class="card-title">Bank Management System</h1>
+                    <p class="card-text">A sophisticated Java-based banking framework, adeptly handling fund management and account operations, with both command-line and GUI interfaces. </p>
+                    <p class="languages">Java</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="button-container">
+            <a href="https://github.com/jordany33?tab=repositories" target="_blank">
+              <button type="button" class="projects-button">View More</button>
+            </a>
+          </div>
+        </section>
+        <section id="contact">
+          <h6 class="contact-sub">What's Next?</h6>
+          <h1 class="contact-title">Get In Touch</h1>
+          <p>I'm exploring internship opportunities for summer 2024. Whether you have a role in mind or just want to say hi, please reach out. I value every connection and will respond promptly!</p>
+          <a href="mailto:jrdeyee@gmail.com">
+            <button type="button" class="contact-button">Say Hello</button>
+          </a>
+        </section>
+      </main>
     </div>
-
     <footer>
-        <h6><a href="https://github.com/jordany33/personalFolio" target="_blank" rel="noopener noreferrer">Designed &
-                Built
-                by Jordan Yee</a></h6>
+      <h6>
+        <a href="https://github.com/jordany33/personalFolio" target="_blank" rel="noopener noreferrer">Designed & Built by Jordan Yee</a>
+      </h6>
     </footer>
-
     <!-- JavaScript link -->
     <script src="/templates/landing.js"></script>
     <script src="/templates/learn-more.js"></script>
@@ -430,6 +303,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>

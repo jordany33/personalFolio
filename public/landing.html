@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Yee</title>
@@ -12,7 +11,6 @@
     <link rel="preload" as="image" href="/favicons/apple-touch-icon.png">
     <link rel="preload" as="image" href="/favicons/android-chrome-192x192.png">
     <link rel="preload" as="image" href="/favicons/android-chrome-512x512.png">
-
     <!-- Regular favicon links -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
@@ -25,80 +23,68 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body class="landing-page">
+  </head>
+  <body class="landing-page">
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <div class="container-fluid">
-                <a href="/">
-                    <img src="/imgs/bitmoji.png" class="circle-effect" alt="Description">
-                </a>
-                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60"
-                    onclick="this.classList.toggle('active')" data-toggle="collapse" data-target="#navbarNav">
-                    <path class="line top"
-                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-                    <path class="line middle" d="m 30,50 h 40" />
-                    <path class="line bottom"
-                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-                </svg>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/learn-more" data-section="contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="content/resume.pdf" target="_blank" class="btn resume-button">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <a href="/">
+            <img src="/imgs/bitmoji.png" class="circle-effect" alt="Description">
+          </a>
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="60" onclick="this.classList.toggle('active')" data-toggle="collapse" data-target="#navbarNav">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/learn-more" data-section="contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="content/resume.pdf" target="_blank" class="btn resume-button">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-
     <div class="container">
-        <main>
-            <section id="head-container">
-                <div class="title">
-                    <h6 class="header">Hi, my name is</h6>
-                    <h1>Jordan Yee.</h1>
-                    <h1 style="white-space: nowrap; display: inline-block;">
-                        I like <span class="typing"></span>
-                    </h1>
-                    <h6 class="white-text">I'm a student at the University of California, Irvine
-                        pursuing a degree in Computer Science. Currently, I'm focused on building
-                        accessible, streamlined solutions at <a href="https://www.iridium.com/" class="green-highlight"
-                            target="_blank" rel="noopener noreferrer">Iridium</a>.
-                    </h6>
-                    <a href="/learn-more">
-                        <button class="learn-more">
-                            <span class="circle" aria-hidden="true">
-                                <span class="icon arrow"></span>
-                            </span>
-                            <span class="button-text">Learn More</span>
-                        </button>
-                    </a>
-                </div>
-            </section>
-
-            <!-- JavaScript link -->
-            <script src="/templates/landing.js"></script>
-            <script src="/templates/learn-more.js"></script>
-            <script src="/templates/href.js"></script>
-            <!-- Add Bootstrap JS link -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-
+      <main>
+        <section id="head-container">
+          <div class="title">
+            <h6 class="header">Hi, my name is</h6>
+            <h1>Jordan Yee.</h1>
+            <h1 style="white-space: nowrap; display: inline-block;"> I like <span class="typing"></span>
+            </h1>
+            <h6 class="white-text">I'm a student at the University of California, Irvine pursuing a degree in Computer Science. Currently, I'm focused on building accessible, streamlined solutions at <a href="https://www.iridium.com/" class="green-highlight" target="_blank" rel="noopener noreferrer">Iridium</a>. </h6>
+            <a href="/learn-more">
+              <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Learn More</span>
+              </button>
+            </a>
+          </div>
+        </section>
+        <!-- JavaScript link -->
+        <script src="/templates/landing.js"></script>
+        <script src="/templates/learn-more.js"></script>
+        <script src="/templates/href.js"></script>
+        <!-- Add Bootstrap JS link -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>
