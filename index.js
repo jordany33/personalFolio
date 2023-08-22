@@ -23,19 +23,19 @@ app.use(session({ secret: 'xQN7Ep8NjsZjzy', resave: true, saveUninitialized: tru
 app.use('/', router); /* this is what allows us to specify routes */
 
 // setup all static files (css, html, scripts)
-app.use('/', express.static('../public'));
-app.use('/fonts', express.static('../fonts'));
-app.use('/imgs', express.static('../imgs'));
-app.use('/favicons', express.static('../favicons'));
-app.use('/templates', express.static('../templates'));
+app.use('/', express.static('src/public'));
+app.use('/fonts', express.static('src/fonts'));
+app.use('/imgs', express.static('src/imgs'));
+app.use('/favicons', express.static('src/favicons'));
+app.use('/components', express.static('src/components'));
 
 // get root dir (https://jordany.dev/) & send to index.html
 router.get('/', (req, res, next) => {
-    res.sendFile('landing.html', { root: '../public' });
+    res.sendFile('landing.html', { root: 'src/public' });
 });
 
 router.get('/learn-more', (req, res) => {
-    res.sendFile('learn-more.html', { root: '../public' });
+    res.sendFile('learn-more.html', { root: 'src/public' });
 });
 
 router.get('/logger', (req, res, next) => {

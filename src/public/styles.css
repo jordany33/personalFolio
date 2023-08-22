@@ -926,26 +926,6 @@ footer a:hover {
 	font-size: 60px;
 	text-align: center;
 	margin-bottom: 10px;
-
-	.contact-button {
-		font-family: 'DM Sans', sans-serif;
-		color: #64ffda;
-		border: 2px solid #64ffda;
-		border-radius: 5px;
-		transition: transform 0.5s, box-shadow 0.5s;
-		font-size: 16px;
-		padding: 10px 20px;
-	}
-
-	.contact-button:hover {
-		transform: translateY(-5px) scale(1.05);
-	}
-
-	.contact-button:focus {
-		outline: none;
-		box-shadow: none;
-		border-color: #64ffda;
-	}
 }
 
 .contact-sub {
@@ -1099,18 +1079,6 @@ button:focus {
 	text-align: center;
 }
 
-@property --a {
-	syntax: "<angle>";
-	initial-value: 0deg;
-	inherits: true;
-}
-
-@property --i {
-	syntax: "<length>";
-	initial-value: 0px;
-	inherits: true;
-}
-
 .circle-effect {
 	--r: 10px;
 	/* control the small circles radius and the main size */
@@ -1129,7 +1097,6 @@ button:focus {
 	background: var(--_m);
 	--_a: rotate linear infinite;
 	animation: var(--_a) 4s, var(--_a) 16s reverse;
-	animation-composition: add;
 	cursor: pointer;
 	transition: --i 0.4s, scale 0.4s;
 }
