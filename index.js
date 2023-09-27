@@ -2,6 +2,7 @@ import express from 'express';
 import session from 'express-session';
 import morgan from 'morgan';
 import axios from 'axios';
+import cmd from 'node-cmd';
 
 const app = express();
 const router = express.Router();
@@ -56,6 +57,21 @@ router.get('/logger', (req, res, next) => {
     }
     next();
 });
+
+app.post('/git', (req, res) => {
+    // If event is "push"
+    if (req.headers['x-github-event'] == "push") { 
+        cmd.run('chmod 777 git.sh'); /* :/ Fix no perms after updating */
+        cmd.get('./git.sh', (err, data) => {  // Run our script
+          if (data) console.log(data);
+          if (err) console.log(err);
+        });
+        cmd.run( 'refresh' );
+        console.log("> [GIT] Updated with origin/master");
+    }
+    res.sendStatus(200);
+  });
+
 
 app.listen(port);
 console.log('server running on ' + port);
